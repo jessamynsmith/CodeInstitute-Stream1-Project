@@ -1,0 +1,16 @@
+{
+  "name": "nationalschool",
+  "version": "1.0.0",
+  "description": "Code Institute Stream 1 Project",
+  "repository": "https://github.com/railto/CodeInstitute-Stream1-Project.git",
+  "devDependencies": { 
+    "http-server": "^0.6.1",
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1"
+  },
+  "author": "mark railton",
+  "license": "MIT"
+}
