@@ -1,0 +1,9 @@
+{
+  "firebase": "grange-manor-ns",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
