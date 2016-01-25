@@ -1,0 +1,120 @@
+.jumbotron {
+  text-align: center;
+}
+
+.box { 
+    text-align: center; 
+    position: relative; 
+}
+
+.box .icon { 
+    position: relative; 
+    z-index: 2; 
+    margin: auto; 
+    width: 88px; 
+    height: 88px; 
+    border: 8px solid white; 
+    line-height: 88px; 
+    border-radius: 50%; 
+    background: #63B76C; 
+    vertical-align: middle; 
+}
+
+.box .icon i { 
+    font-size: 36px !important; 
+    color: #fff !important; 
+}
+
+.box .info { 
+    font-family: "Roboto",sans-serif !important; 
+    margin-top: -24px; 
+    background: rgba(0, 0, 0, 0.04); 
+    border: 1px solid #e0e0e0; 
+    padding: 15px 0 10px 0; 
+}
+
+.box:hover .info { 
+    background: rgba(0, 0, 0, 0.04); 
+    border-color: #e0e0e0; 
+    color: white; 
+}
+
+.box .info h3 { 
+    font-size: 16px; 
+    color: #222; 
+    font-weight: 500; 
+}
+
+.box .info p { 
+    font-size: 13px; 
+    color: #666; 
+    line-height: 1.5em; 
+    margin: 20px;
+}
+
+.box .info .more a { 
+    font-size: 12px; 
+    color: #222; 
+    line-height: 12px; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+}
+
+.box:hover .info .more a { 
+    color: #fff; 
+    padding: 6px 8px; 
+    background-color: #63B76C; 
+}
+
+.box .space { 
+    height: 30px; 
+}
+
+@keyframes slideshow {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+.slideshow {
+  overflow: hidden;
+}
+
+.slideshow figure img {
+  width: 20%;
+  float: left;
+}
+
+.slideshow figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slideshow infinite;
+}
