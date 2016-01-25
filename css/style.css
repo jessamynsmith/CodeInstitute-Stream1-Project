@@ -31,6 +31,7 @@
     background: rgba(0, 0, 0, 0.04); 
     border: 1px solid #e0e0e0; 
     padding: 15px 0 10px 0; 
+    border-radius: 5px;
 }
 
 .box:hover .info { 
@@ -107,6 +108,7 @@
 .slideshow figure img {
   width: 20%;
   float: left;
+  border-radius: 5px;
 }
 
 .slideshow figure {
