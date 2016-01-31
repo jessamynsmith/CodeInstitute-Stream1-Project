@@ -182,7 +182,7 @@ body {
   padding-top: 10px;
 }
 
-.news-item a {
+.news-item h2 {
   font-family: 'Schoolbell', cursive;
   color: #000000;
 }
@@ -191,6 +191,20 @@ body {
   font-style: italic;
   font-weight: bold;
   color: #b3b3b3;
+}
+
+.news-item p {
+  font-family: "Roboto",sans-serif; 
+}
+
+.news-item .more:hover a { 
+  color: #fff; 
+  padding: 6px 8px; 
+  background-color: #63B76C; 
+}
+
+.news-item .more a {
+  color: #000000;
 }
 
 footer .row {
