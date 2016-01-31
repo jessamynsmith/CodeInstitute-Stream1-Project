@@ -91,14 +91,14 @@ body {
   background-color: #1CB8EB;  
 }
 
-.box { 
+.info-box { 
   text-align: center; 
   position: relative;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.box .icon { 
+.info-box .icon { 
   position: relative; 
   z-index: 2; 
   margin: auto; 
@@ -111,12 +111,12 @@ body {
   vertical-align: middle; 
 }
 
-.box .icon i { 
+.info-box .icon i { 
   font-size: 36px !important; 
   color: #fff !important; 
 }
 
-.box .info { 
+.info-box .info { 
   font-family: "Roboto",sans-serif !important; 
   margin-top: -24px; 
   background: rgba(0, 0, 0, 0.04); 
@@ -125,26 +125,26 @@ body {
   border-radius: 5px;
 }
 
-.box:hover .info { 
+.info-box:hover .info { 
   background: rgba(0, 0, 0, 0.04); 
   border-color: #e0e0e0; 
   color: white; 
 }
 
-.box .info h3 { 
+.info-box .info h3 { 
   font-size: 16px; 
   color: #222; 
   font-weight: 500; 
 }
 
-.box .info p { 
+.info-box .info p { 
   font-size: 13px; 
   color: #666; 
   line-height: 1.5em; 
   margin: 20px;
 }
 
-.box .info .more a { 
+.info-box .info .more a { 
   font-size: 12px; 
   color: #222; 
   line-height: 12px; 
@@ -152,11 +152,13 @@ body {
   text-decoration: none; 
 }
 
-.box:hover .info .more a { 
+.info-box:hover .info .more a { 
   color: #fff; 
   padding: 6px 8px; 
   background-color: #63B76C; 
 }
+
+
 
 footer .row {
   background-color: #F1760F;
