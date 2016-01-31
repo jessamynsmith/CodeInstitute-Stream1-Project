@@ -218,6 +218,11 @@ body {
   text-align: center;
 }
 
+.contact-form .result {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
 footer .row {
   background-color: #F1760F;
   padding-top: 15px;
