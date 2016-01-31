@@ -1,0 +1,29 @@
+<!doctype html>  
+<html>  
+<head>  
+    <title>angularjs Validation of a phone Number</title>  
+    <script src="http://code.angularjs.org/1.2.9/angular.min.js"></script>  
+    <style>  
+        .error {  
+            color: red;  
+        }  
+    </style>  
+    <script>  
+        var app = angular.module('myApp', []);  
+  
+        app.controller('mainCtrl', function ($scope) {  
+            $scope.phoneNumbr = /^\+?\d{2}[- ]?\d{3}[- ]?\d{5}$/;  
+        });  
+    </script>  
+</head>  
+<body ng-app="myApp">  
+    <ng-form name="myForm" ng-controller="mainCtrl">  
+        <div><b>Enter your Phone No. in the format of (91-xxx-xxxxx) :</b></div>  
+        <div><b>Example of a valid Phone no is :91-999-99999</b></div>  
+        <div>  
+            <input type="text" placeholder="+91-xxx-xxxxx" name="phone" ng-pattern="phoneNumbr" ng-model="phone" />  
+            <br><span class="error" ng-show="myForm.phone.$error.pattern">Please Enter the Phone no matching  pattern [+91-xxx-xxxxx || 91-xxx-xxxxx]</span>  
+        </div>  
+    </ng-form>  
+</body>  
+</html>

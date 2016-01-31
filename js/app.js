@@ -9,10 +9,6 @@ var app = angular.module('schoolApp', ['ngRoute','schoolControllers','schoolDire
             templateUrl: "templates/news.html",
             controller: "NewsListController"
         })
-        .when("/news/:newsId", {
-            templateUrl: "templates/news-item.html",
-            controller: "NewsItemController"
-        })
         .when("/info/greenschools", {
             templateUrl: "templates/info/greenschools.html"
         })
@@ -21,6 +17,7 @@ var app = angular.module('schoolApp', ['ngRoute','schoolControllers','schoolDire
         })
         .when("/contact", {
             templateUrl: "templates/contact.html",
+            controller: "ContactController"
         })
         .otherwise({
             redirectTo: '/home'

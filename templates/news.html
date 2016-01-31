@@ -8,14 +8,7 @@
                 <div class="news-item">
                     <h2>{{item.title}}</h2>
                     <h6>Posted on {{item.date}} by {{item.author}}</h6>
-                    <p>
-                        {{item.content_short}}
-                    </p>
-                    <div class="more">
-                        <a href="#news/{{item.id}}">
-                            Read More <i class="fa fa-angle-double-right"></i>
-                        </a>
-                    </div>
+                    <p ng-bind-html=" item.content | nl2br "></p>
                 </div>
             </div>
         </div>
