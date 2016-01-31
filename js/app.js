@@ -10,8 +10,8 @@ var app = angular.module('schoolApp', ['ngRoute','schoolControllers','schoolDire
             controller: "NewsListController"
         })
         .when("/news/:newsId", {
-            templateUrl: "templates/news.html",
-            controller: "NewsListController"
+            templateUrl: "templates/news-item.html",
+            controller: "NewsItemController"
         })
         .when("/info/greenschools", {
             templateUrl: "templates/info/greenschools.html"
