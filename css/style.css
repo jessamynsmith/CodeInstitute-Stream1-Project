@@ -209,6 +209,7 @@ body {
   color: #fff; 
   padding: 6px 8px; 
   background-color: #63B76C; 
+  border-radius: 15px;
 }
 
 .news-item .more a {
