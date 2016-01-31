@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row header">
+        <h1>Our Latest News</h1>
+    </div>
+    <div class="row news-list">
+        <div class="col-md-10 col-md-offset-1">
+            <div ng-repeat="item in newsList">
+                <div class="news-item">
+                    <h2><a href="#news/{{item.id}}">{{item.title}}</a></h2>
+                    <h6>Posted on {{item.date}} by {{item.author}}</h6>
+                    <p>
+                        {{item.content_short}}...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-angular.module('schoolApp', ['ngRoute', 'schoolDirectives'])
+var app = angular.module('schoolApp', ['ngRoute','schoolControllers','schoolDirectives'])
 .config(function($routeProvider) {
 
     $routeProvider
@@ -6,7 +6,12 @@ angular.module('schoolApp', ['ngRoute', 'schoolDirectives'])
             templateUrl: "templates/home.html"
         })
         .when("/news", {
-            templateUrl: "templates/news.html"
+            templateUrl: "templates/news.html",
+            controller: "NewsListController"
+        })
+        .when("/news/:newsId", {
+            templateUrl: "templates/news.html",
+            controller: "NewsListController"
         })
         .when("/info/greenschools", {
             templateUrl: "templates/info/greenschools.html"
