@@ -17,13 +17,12 @@
         <title>Grange Manor National School</title>
     </head>
     <body>
+
+    <div class="col-md-8 col-md-offset-2">
         <school-nav></school-nav>
-        <div class="container">
-            <div class="col-md-12 ">
-                <div ng-view></div>
-                <school-footer></school-footer>
-            </div>
-        </div>
+        <div ng-view></div>
+        <school-footer></school-footer>
+    </div>
         <!-- Include application JS files -->
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript"  src="js/controller.js"></script>
